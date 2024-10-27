@@ -7,7 +7,7 @@ const Stats = () => {
         {stats.map((stat) => (
           <li
             key={stat.id}
-            className='text-white items-center justify-between flex font-poppins text-[40.89px] font-semibold not-first: border-l-dimWhite border-l-[0.5px] '
+            className='text-white items-center justify-between flex font-poppins text-[40.89px] h-[13px] pl-[50px] font-semibold border-l-dimWhite border-l-[0.5px] first:border-l-0 first:pl-0'
           >
             {stat.value}{' '}
             <span className='text-gradient text-start text-[20.45px] ml-[25px]'>
