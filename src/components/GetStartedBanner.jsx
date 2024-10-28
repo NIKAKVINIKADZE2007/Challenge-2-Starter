@@ -1,5 +1,3 @@
-import React from 'react';
-
 const GetStartedBanner = () => {
   return (
     <section className='w-full h-[293px] bg-black-gradient-2 flex justify-center items-center rounded-[20px]'>
