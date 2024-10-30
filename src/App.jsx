@@ -2,11 +2,12 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
+import Billing from './components/Billing';
+import CardDeal from './components/CardDeal';
+import FeedBack from './components/FeedBack';
 import Clients from './components/Clients';
 import GetStartedBanner from './components/GetStartedBanner';
 import Footer from './components/Footer';
-import FeedBack from './components/FeedBack';
-import CardDeal from './components/CardDeal';
 
 const App = () => {
   return (
@@ -26,6 +27,12 @@ const App = () => {
       <div className='flex items-center justify-center px-6 sm:px-16'>
         <div className='max-w-[1280px] w-full'>
           <Stats />
+        </div>
+      </div>
+
+      <div className='flex items-center justify-center px-6 my-[100px] sm:px-16'>
+        <div className='max-w-[1280px] w-full'>
+          <Billing />
         </div>
       </div>
 
