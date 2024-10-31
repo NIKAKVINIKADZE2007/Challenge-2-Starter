@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Feature from './components/Feature';
 import Stats from './components/Stats';
 import Billing from './components/Billing';
 import CardDeal from './components/CardDeal';
@@ -27,6 +28,12 @@ const App = () => {
       <div className='flex items-center justify-center px-6 sm:px-16'>
         <div className='max-w-[1280px] w-full'>
           <Stats />
+        </div>
+      </div>
+
+      <div className='flex items-center my-[160px] justify-center px-6 sm:px-16'>
+        <div className='max-w-[1280px] w-full'>
+          <Feature />
         </div>
       </div>
 
