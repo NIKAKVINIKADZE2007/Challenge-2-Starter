@@ -1,3 +1,5 @@
+import GetStartedBtn from '../buttons/GetStartedBtn';
+
 const GetStartedBanner = () => {
   return (
     <section className='w-full h-[293px] bg-black-gradient-2 flex justify-center items-center rounded-[20px]'>
@@ -11,9 +13,7 @@ const GetStartedBanner = () => {
             anywhere on the planet.
           </p>
         </div>
-        <button className='text-[18px] font-medium text-[#00040E] rounded-[10px] max-w-[170px] w-full h-[64px] bg-blue-gradient'>
-          Get Started
-        </button>
+        <GetStartedBtn />
       </div>
     </section>
   );
