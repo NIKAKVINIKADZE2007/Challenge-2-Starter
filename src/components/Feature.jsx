@@ -22,8 +22,11 @@ const Feature = () => {
       <div className='flex flex-col h-[344px] justify-between max-w-[470px] w-full font-poppins'>
         {features.map((feature) => (
           <div
-            className={`flex h-[79px] w-full justify-between  items-center ${
-              active === feature.id ? 'h-[115px] bg-black-gradient' : ''
+            onClick={() => {
+              setActive(feature.id);
+            }}
+            className={`flex w-full justify-between h-[115px] px-[20px] max-w-[450px]  items-center ${
+              active === feature.id ? 'bg-black-gradient rounded-[20px]' : ''
             }`}
             key={feature.id}
           >
@@ -32,11 +35,11 @@ const Feature = () => {
               alt='feature-icon'
               className='w-[64px] h-[64px]'
             />
-            <div className='max-w-[366px] w-full h-[74px] '>
+            <div className='max-w-[366px] w-full h-[74px] ml-[20px] '>
               <h1 className='text-white font-semibold font-poppins text-[18px]'>
                 {feature.title}
               </h1>
-              <p className='w-full mt-[8px]  text-white opacity-70 tracking-[1px] text-[18px] leading-[170%]'>
+              <p className=' w-full mt-[8px]  text-white opacity-70  text-[16px] leading-[170%]'>
                 {feature.content}
               </p>
             </div>
